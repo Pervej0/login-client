@@ -65,7 +65,7 @@ const useFirebase = () => {
         const destination = location?.state?.from || "/";
         navigate(destination);
         fetch("https://serene-journey-34919.herokuapp.com/users", {
-          method: "POST",
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
